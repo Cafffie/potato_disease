@@ -6,7 +6,16 @@ from PIL import Image, ImageOps
 import numpy as np
 
 
-model= tf.keras.models.load_model("https://github.com/Cafffie/potato_disease_app/blob/main/potatoes_plant_model.h5")
+model_url = "https://github.com/Cafffie/potato_disease_app/blob/main/potatoes_plant_model.h5"
+local_model_path = "potatoes_plant_model.h5"
+
+if not os.path.exists(local_model_path):
+    with open(local_model_path, "wb") as f:
+        response = requests.get(model_url)
+        f.write(response.content)
+
+model = tf.keras.models.load_model(local_model_path)
+        
 class_names= ['Early_blight', 'Late_blight', 'healthy']
 image_size= 256
 
