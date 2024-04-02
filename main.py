@@ -6,7 +6,7 @@ from PIL import Image, ImageOps
 import numpy as np
 
 
-model= tf.keras.models.load_model(r"C:\Users\Open user\Documents\potato_disease\models\1")
+model= tf.keras.models.load_model("potatoes_plant_disease.h5")
 class_names= ['Early_blight', 'Late_blight', 'healthy']
 image_size= 256
 
@@ -22,7 +22,8 @@ def predict_image(model, img):
     return predicted_class, confidence
 
 #Streamlit app
-file_upload= st.file_uploader("upload an image", type= ["jpg", "png", "jpeg"])
+file_upload= st.file_uploader("Upload a potato plant leave to test for a disease.", 
+                              type= ["jpg", "png", "jpeg"])
 if file_upload is not None:
     image= Image.open(file_upload)
     st.image(image, use_column_width=True)
