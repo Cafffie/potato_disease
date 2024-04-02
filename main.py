@@ -6,7 +6,7 @@ from PIL import Image, ImageOps
 import numpy as np
 
 
-model= tf.keras.models.load_model("potatoes_plant_disease.h5")
+model= tf.keras.models.load_model("https://github.com/Cafffie/potato_disease_app/blob/main/potatoes_plant_model.h5")
 class_names= ['Early_blight', 'Late_blight', 'healthy']
 image_size= 256
 
