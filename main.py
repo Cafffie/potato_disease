@@ -37,7 +37,9 @@ st.write("author: Arebi Olawunmi")
 st.write("Date: 24/12/2024")
 
 st.title("Potato Disease Detection App")
-file_upload= st.file_uploader("Upload a potato plant leave to test for a disease.", 
+st.write("#### This app assists in identifying diseases present in potato plants.")
+
+file_upload= st.file_uploader("Upload a potato plant leave.", 
                               type= ["jpg", "png", "jpeg"])
 if file_upload is not None:
     image= Image.open(file_upload)
