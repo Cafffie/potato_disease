@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 import streamlit as st
 from PIL import Image, ImageOps
 import numpy as np
+import requests
+import os
 
 
 model_url = "https://github.com/Cafffie/potato_disease_app/blob/main/potatoes_plant_model.h5"
