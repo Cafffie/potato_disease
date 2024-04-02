@@ -33,6 +33,10 @@ def predict_image(model, img):
     return predicted_class, confidence
 
 #Streamlit app
+st.write(author: Arebi Olawunmi)
+st.write(Date: 24/12/2024)
+
+st.title("Potato Disease Detection App")
 file_upload= st.file_uploader("Upload a potato plant leave to test for a disease.", 
                               type= ["jpg", "png", "jpeg"])
 if file_upload is not None:
