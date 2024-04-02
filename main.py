@@ -39,4 +39,4 @@ if file_upload is not None:
     image= Image.open(file_upload)
     st.image(image, use_column_width=True)
     predicted_class, confidence = predict_image(model, image)
-    st.success(f"Prediction: {predicted_class}.\n Confidence: {confidence}%")
+    st.success(f"PREDICTION: {predicted_class}.\nCONFIDENCE: {confidence}%")
