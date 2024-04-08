@@ -33,8 +33,8 @@ def predict_image(model, img):
     return predicted_class, confidence
 
 #Streamlit app
-st.write("author: Arebi Olawunmi")
-st.write("Date: 24/12/2024")
+st.write("Author: Arebi Olawunmi")
+st.write("Date: 24/12/2023")
 
 st.title("Potato Disease Detection App")
 st.write("#### This app assists in identifying diseases present in potato plants.")
