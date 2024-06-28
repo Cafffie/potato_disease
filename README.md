@@ -1,7 +1,5 @@
-Potato Disease Detection App
+Potato Disease Detection Project
 
-Author: Arebi Olawunmi  
-Date: 24/12/2023
 
 Overview
 
